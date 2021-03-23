@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "D:\\GBW\\AngularCode\\evaluation\\evaluation\\wwwroot",
+            "outputPath": "C:\\Users\\DELL\\Desktop\\angular\\evaluationangular\\evalutionAngular\\evaluation\\wwwroot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
