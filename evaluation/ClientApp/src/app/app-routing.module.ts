@@ -3,9 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
+
    {
     path:"selfassesment",
     loadChildren: () => import('./components/selfassessment/selfassessment.module').then(m => m.SelfassessmentModule)
+  },
+  {
+    path: "dashboard",
+    loadChildren: () => import('./components/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path:"base",
