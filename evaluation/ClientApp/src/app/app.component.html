@@ -4,23 +4,23 @@
   <!-- <ng-container >
     <app-dashboard></app-dashboard>
     <app-my-survey></app-my-survey>
-    
+
   </ng-container> -->
   <nav>
-   
-      <mat-tab routerLink="/selfassesment">Self Assesment    </mat-tab>
-      <a routerLink="/base" >Dashboard    </a>
-      <a routerLink="/survey" >My Survey    </a>
-      <a routerLink="/assessors" routerLinkActive="active">Assessors    </a>
-     <a routerLink="/stores" routerLinkActive="active">Stores    </a>
-      <a routerLink="/plansandpricing" routerLinkActive="active">Plans and Pricing    </a>
-      <button mat-raised-button class= "buttonData" color="Upgrade"  routerLink="/upgrade">Upgrade</button>
-      
-      <a routerLink="/newSurvey" routerLinkActive="active">New Survey    </a>
-   
+
+    <mat-tab routerLink="/selfassesment">Self Assesment    </mat-tab>
+    <a routerLink="/base">Dashboard    </a>
+    <a routerLink="/survey">My Survey    </a>
+    <a routerLink="/assessors" routerLinkActive="active">Assessors    </a>
+    <a routerLink="/stores" routerLinkActive="active">Stores    </a>
+    <a routerLink="/plansandpricing" routerLinkActive="active">Plans and Pricing    </a>
+    <button mat-raised-button class="buttonData" color="Upgrade" routerLink="/upgrade">Upgrade</button>
+
+    <a routerLink="/newSurvey" routerLinkActive="active">New Survey    </a>
+
   </nav>
   <router-outlet></router-outlet>
-                                        
+
   <div class="spinner-border text-muted"></div>
   <div class="spinner-border text-primary"></div>
   <div class="spinner-border text-success"></div>
@@ -32,4 +32,6 @@
   <div class="spinner-border text-light"></div>
 
   <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-  
+
+  <router-outlet></router-outlet>
+
