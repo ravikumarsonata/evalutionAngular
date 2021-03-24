@@ -64,7 +64,7 @@ class AppComponent {
     }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 36, vars: 0, consts: [[1, "container"], ["routerLink", "/selfassesment", "routerLinkActive", "active"], ["routerLink", "/dashboard", "routerLinkActive", "active"], ["routerLink", "/survey", "routerLinkActive", "active"], ["routerLink", "/assessors", "routerLinkActive", "active"], ["routerLink", "/stores", "routerLinkActive", "active"], ["routerLink", "/plansandpricing", "routerLinkActive", "active"], ["mat-raised-button", "", "color", "Upgrade", 1, "buttonData"], ["routerLink", "/newSurvey", "routerLinkActive", "active"], [1, "spinner-border", "text-muted"], [1, "spinner-border", "text-primary"], [1, "spinner-border", "text-success"], [1, "spinner-border", "text-info"], [1, "spinner-border", "text-warning"], [1, "spinner-border", "text-danger"], [1, "spinner-border", "text-secondary"], [1, "spinner-border", "text-dark"], [1, "spinner-border", "text-light"], ["min", "1", "max", "100", "step", "1", "value", "1"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 37, vars: 0, consts: [[1, "container-fluid"], ["routerLink", "/selfassesment"], ["routerLink", "/base"], ["routerLink", "/survey"], ["routerLink", "/assessors", "routerLinkActive", "active"], ["routerLink", "/stores", "routerLinkActive", "active"], ["routerLink", "/plansandpricing", "routerLinkActive", "active"], ["mat-raised-button", "", "color", "Upgrade", "routerLink", "/upgrade", 1, "buttonData"], ["routerLink", "/newSurvey", "routerLinkActive", "active"], [1, "spinner-border", "text-muted"], [1, "spinner-border", "text-primary"], [1, "spinner-border", "text-success"], [1, "spinner-border", "text-info"], [1, "spinner-border", "text-warning"], [1, "spinner-border", "text-danger"], [1, "spinner-border", "text-secondary"], [1, "spinner-border", "text-dark"], [1, "spinner-border", "text-light"], ["min", "1", "max", "100", "step", "1", "value", "1"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Angular code changes by Nagarajan on 23-03-2021 raVI");
@@ -113,8 +113,9 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "div", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "div", 17);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](35, "mat-slider", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLink"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_2__["MatSlider"]], styles: [".buttonData[_ngcontent-%COMP%] {\r\n    background-color: rgb(247, 238, 238);\r\n    border: red;\r\n    color: rgb(219, 22, 22);\r\n    padding: 10px 20px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    margin: 4px 2px;\r\n    cursor: pointer;\r\n    border-radius: 16px;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0NBQW9DO0lBQ3BDLFdBQVc7SUFDWCx1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixxQkFBcUI7SUFDckIscUJBQXFCO0lBQ3JCLGVBQWU7SUFDZixlQUFlO0lBQ2YsbUJBQW1CO0VBQ3JCIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ1dHRvbkRhdGEge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NywgMjM4LCAyMzgpO1xyXG4gICAgYm9yZGVyOiByZWQ7XHJcbiAgICBjb2xvcjogcmdiKDIxOSwgMjIsIDIyKTtcclxuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIG1hcmdpbjogNHB4IDJweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XHJcbiAgfSJdfQ== */"] });
+    } }, directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLink"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_2__["MatSlider"]], styles: [".buttonData[_ngcontent-%COMP%] {\r\n    background-color: rgb(247, 238, 238);\r\n    border: red;\r\n    color: rgb(219, 22, 22);\r\n    padding: 10px 20px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    margin: 4px 2px;\r\n    cursor: pointer;\r\n    border-radius: 16px;\r\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksb0NBQW9DO0lBQ3BDLFdBQVc7SUFDWCx1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixxQkFBcUI7SUFDckIscUJBQXFCO0lBQ3JCLGVBQWU7SUFDZixlQUFlO0lBQ2YsbUJBQW1CO0VBQ3JCIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJ1dHRvbkRhdGEge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NywgMjM4LCAyMzgpO1xyXG4gICAgYm9yZGVyOiByZWQ7XHJcbiAgICBjb2xvcjogcmdiKDIxOSwgMjIsIDIyKTtcclxuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgIG1hcmdpbjogNHB4IDJweDtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XHJcbiAgfSJdfQ== */"] });
 
 
 /***/ }),
@@ -174,7 +175,49 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const routes = [];
+const routes = [
+    {
+        path: "selfassesment",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-selfassessment-selfassessment-module */ "components-selfassessment-selfassessment-module").then(__webpack_require__.bind(null, /*! ./components/selfassessment/selfassessment.module */ "8pcF")).then(m => m.SelfassessmentModule)
+    },
+    {
+        path: "base",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-base-base-module */ "components-base-base-module").then(__webpack_require__.bind(null, /*! ./components/base/base.module */ "cGcg")).then(m => m.BaseModule)
+    },
+    {
+        path: "survey",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-mysurveys-mysurveys-module */ "components-mysurveys-mysurveys-module").then(__webpack_require__.bind(null, /*! ./components/mysurveys/mysurveys.module */ "cGo6")).then(m => m.MysurveysModule)
+    },
+    {
+        path: "assessors",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-assessors-assessors-module */ "components-assessors-assessors-module").then(__webpack_require__.bind(null, /*! ./components/assessors/assessors.module */ "IOTR")).then(m => m.AssessorsModule)
+    },
+    {
+        path: "stores",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-stores-stores-module */ "components-stores-stores-module").then(__webpack_require__.bind(null, /*! ./components/stores/stores.module */ "e7lA")).then(m => m.StoresModule)
+    },
+    {
+        path: "plansandpricing",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-plansandpricing-plansandpricing-module */ "components-plansandpricing-plansandpricing-module").then(__webpack_require__.bind(null, /*! ./components/plansandpricing/plansandpricing.module */ "2tgm")).then(m => m.PlansandpricingModule)
+    },
+    {
+        path: "newSurvey",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-newsurvey-newsurvey-module */ "components-newsurvey-newsurvey-module").then(__webpack_require__.bind(null, /*! ./components/newsurvey/newsurvey.module */ "LnMY")).then(m => m.NewsurveyModule)
+    },
+    {
+        path: "myaccount",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-myaccount-myaccount-module */ "components-myaccount-myaccount-module").then(__webpack_require__.bind(null, /*! ./components/myaccount/myaccount.module */ "yToQ")).then(m => m.MyaccountModule)
+    },
+    {
+        path: "upgrade",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-upgrade-upgrade-module */ "components-upgrade-upgrade-module").then(__webpack_require__.bind(null, /*! ./components/upgrade/upgrade.module */ "fpCc")).then(m => m.UpgradeModule)
+    },
+    {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full'
+    }
+];
 class AppRoutingModule {
 }
 AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); };
