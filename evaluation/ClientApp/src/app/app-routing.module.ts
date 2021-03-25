@@ -12,11 +12,7 @@ const routes: Routes = [
     path: "dashboard",
     loadChildren: () => import('./components/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
-  {
-    path:"base",
-    loadChildren: () => import('./components/base/base.module').then(m => m.BaseModule)
  
-},
 {
   path:"survey",
   loadChildren: () => import('./components/mysurveys/mysurveys.module').then(m => m.MysurveysModule)

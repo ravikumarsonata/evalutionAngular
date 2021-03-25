@@ -28,7 +28,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\components\base\material\" />
+    <None Remove="ClientApp\src\app\components\assessors\assessors.component.spec.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\components\assessors\assessors.component.spec.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\src\app\components\common-controls\components\" />
+    <Folder Include="ClientApp\src\app\components\common-controls\directives\" />
+    <Folder Include="ClientApp\src\app\components\common-controls\models\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
