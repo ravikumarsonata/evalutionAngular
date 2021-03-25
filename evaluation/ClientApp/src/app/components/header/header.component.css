@@ -1,38 +1,12 @@
-.nav-link {
-    color: black;
+.navbar-dark
+{
+    background-color:white !important;
+    color:black;
+
 }
-.buttonData {
-    background-color : white;
-    border-color: red;
-    color: red;
-    padding: 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 2px 2px;
-    cursor: pointer;
-    border-radius: 16px;
+  .navbar-dark .navbar-toggler{
+      background:black;
   }
-  .buttons {
-    background-color: #0f7f70;
-    border: none;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-  }
-  .ytbutton {
-    border-color: none;
+  .navbar-dark .navbar-nav .nav-link {
     color: black;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-    margin: 2px 2px;
   }
-  .button5,.button6 {border-radius: 50%;}
- 

@@ -1,86 +1,32 @@
-
-<!--<nav>
-
-  <mat-tab routerLink="/selfassesment">Self Assesment    </mat-tab>
-  <a routerLink="/base">Dashboard    </a>
-  <a routerLink="/survey">My Survey    </a>
-  <a routerLink="/assessors" routerLinkActive="active">Assessors    </a>
-  <a routerLink="/stores" routerLinkActive="active">Stores    </a>
-  <a routerLink="/plansandpricing" routerLinkActive="active">Plans and Pricing    </a>
-  <button mat-raised-button class="buttonData" color="Upgrade" routerLink="/upgrade">Upgrade</button>
-
-  <a routerLink="/newSurvey" routerLinkActive="active">New Survey    </a>
-
-</nav>-->
-<div class="tab-group">
-  <button class="buttons button5"></button>
-  <mat-tab-group  class="tabslinks" animationDuration="0ms" 
-    mat-align-tabs="center">
-   
-    <mat-tab class="tabData">
-      <ng-template mat-tab-label
-        > <a class="nav-link text-black" routerLink="/selfassesment">Self Assesment</a></ng-template
-      >
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        ><a class="nav-link text-black" routerLink="/dashboard">Dashboard</a>
-      </ng-template>
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        >  <a class="nav-link text-black" routerLink="/survey">My Survey</a></ng-template
-      >
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        >    <a class="nav-link text-black" routerLink="/assessors" routerLinkActive="active">Assessors </a>
-        </ng-template
-      >
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        >   <a class="nav-link text-black" routerLink="/plansandpricing" routerLinkActive="active">Plans & Pricing </a>
-        </ng-template
-      >
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        >  <button mat-raised-button class="buttonData" color="Upgrade" routerLink="/upgrade">Upgrade</button>
-        </ng-template
-        > 
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-        >  <a class="nav-link text-black" routerLink="/newSurvey" routerLinkActive="active">New Survey </a>
-         
-        </ng-template
-        >
-    </mat-tab>
-    <mat-tab>
-      <ng-template mat-tab-label
-      > 
-      <button class="ytbutton button6">YT</button>
-      </ng-template>
-    </mat-tab>
-  </mat-tab-group>
- 
-</div>
-<!-- <div class="pull-left tab-group">
-  <mat-tab-group
-    animationDuration="0ms"
-  >
-    <mat-tab>
-      <ng-template mat-tab-label>
-        <a class="navbar-brand" routerLink="/selfassesment">Self Assesment</a>
-        <a class="tnavbar-brand" routerLink="/dashboard">Dashboard</a>
-        <a class="nav-link text-black" routerLink="/survey">My Survey</a>
-        <a class="nav-link text-black" routerLink="/assessors" routerLinkActive="active">Assessors </a>
-        <a class="nav-link text-black" routerLink="/plansandpricing" routerLinkActive="active">Plans and Pricing </a>
-        <button mat-raised-button class="buttonData" color="Upgrade" routerLink="/upgrade">Upgrade</button>
-         
-        
-      </ng-template>
-    </mat-tab>
-  </mat-tab-group>
-</div> -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/selfassesment">Self Assesment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/mysurvey">Mysurvey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/newsurvey">New Survey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/plansandpricing">Plans and Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/stores">Stores</a>
+      </li>
+      <li class="nav-item nabar-right">
+        <a class="nav-link" routerLink="/upgrades">Upgrades</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
