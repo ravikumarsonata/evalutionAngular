@@ -18,7 +18,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, TableComponent, SearchComponent, BreadcrumbComponent, TabsComponent],
+  declarations: [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent],
   imports: [
     CommonModule,
     SharedRoutingModule,
