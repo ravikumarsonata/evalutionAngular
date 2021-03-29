@@ -18,9 +18,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
 
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
-
+let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent, TableComponent]
 @NgModule({
-  declarations: [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent],
+  declarations: [...componentDeclarations],
   imports: [
     CommonModule,
     SharedRoutingModule,
@@ -29,7 +29,8 @@ import { MaterialModule } from '../material/material.module';
     
   ],
   exports: [
-    MaterialModule
+    MaterialModule,
+    ...componentDeclarations
   ]
 })
 export class SharedModule { }

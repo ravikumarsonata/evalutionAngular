@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
+  {
+    path: "",
+    loadChildren: () => import('./components/mysurveys/mysurveys.module').then(m => m.MysurveysModule)
+  },
 
    {
     path:"selfassesment",
@@ -47,11 +51,11 @@ const routes: Routes = [
   path:"upgrade",
   loadChildren: () => import('./components/upgrade/upgrade.module').then(m => m.UpgradeModule)
 },
-{
-  path: '',
-  redirectTo: '',
-  pathMatch: 'full'
-}
+//{
+//  path: '',
+//  redirectTo: '',
+//  pathMatch: 'full'
+//}
 ];
 
 @NgModule({
