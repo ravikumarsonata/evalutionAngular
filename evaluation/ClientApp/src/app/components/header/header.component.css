@@ -26,6 +26,6 @@ color:red !important;
 border-radius:20px;
 border: 2px solid red !important;
 }
-.secondary{
-    background-color:grey !important;
+.mini-secondary {
+  background-color: grey !important;
 }
