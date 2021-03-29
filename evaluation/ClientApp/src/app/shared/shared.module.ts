@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedRoutingModule } from './shared-routing.module';
-
 import { AlertComponent } from './components/alert/alert.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { LoadingPanelComponent } from './components/loading-panel/loading-panel.component';
@@ -23,13 +21,11 @@ let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelCompon
   declarations: [...componentDeclarations],
   imports: [
     CommonModule,
-    SharedRoutingModule,
-    RouterModule,
-    MaterialModule
+    RouterModule
     
   ],
   exports: [
-    MaterialModule,
+ 
     ...componentDeclarations
   ]
 })

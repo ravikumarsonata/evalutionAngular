@@ -7,7 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './material/material.module';
+/*import { SharedModule } from './shared/shared.module';*/
 
 
 @NgModule({
@@ -21,11 +22,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
-  
-   
- 
-    
+    MaterialModule
     
   ],
   providers: [],

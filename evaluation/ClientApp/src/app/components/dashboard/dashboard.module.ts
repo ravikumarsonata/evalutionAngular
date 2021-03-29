@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import { SharedRoutingModule } from '../../shared/shared-routing.module';
+
 
 
 
@@ -13,7 +13,6 @@ import { SharedRoutingModule } from '../../shared/shared-routing.module';
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
-    SharedRoutingModule,
     DashboardRoutingModule
   ]
 })

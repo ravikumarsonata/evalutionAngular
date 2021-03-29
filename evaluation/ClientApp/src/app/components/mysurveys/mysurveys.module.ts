@@ -5,6 +5,7 @@ import { MysurveysRoutingModule } from './mysurveys-routing.module';
 import { MysurveysComponent } from './mysurveys.component';
 import { MaterialModule } from '../../material/material.module';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     MysurveysRoutingModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ]
 })
 export class MysurveysModule { }

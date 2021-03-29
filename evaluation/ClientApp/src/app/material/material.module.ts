@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { MaterialRoutingModule } from './material-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
@@ -66,7 +64,6 @@ let materialModule = [
   MatAutocompleteModule,
   MatBadgeModule,
   MatBottomSheetModule,
-  MatButtonModule,
   MatButtonToggleModule,
   MatCardModule,
   MatCheckboxModule,
@@ -107,7 +104,6 @@ let materialModule = [
   declarations: [],
   imports: [
     CommonModule,
-    MaterialRoutingModule,
     ...materialModule
   ],
   exports: [...materialModule]
