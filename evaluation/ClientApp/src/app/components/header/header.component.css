@@ -10,3 +10,35 @@
   .navbar-dark .navbar-nav .nav-link {
     color: black;
   }
+  .buttonData {
+    background-color : white;
+    border-color: red;
+    color: red;
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+   
+  }
+  .buttonPosition{
+    float:right;
+    margin-left: 240px;
+  }
+  .selfassesment{
+    margin-right: 50px;
+  }
+  .dashboard{
+    margin-right: 50px;
+  }
+  .survey{
+    margin-right: 50px;
+  }
+  .assesor{
+    margin-right: 50px;
+  }
+  .plans{
+    margin-right: 50px;
+  }

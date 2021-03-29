@@ -8,25 +8,48 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/selfassesment"  mat-button>Self Assesment</a>
+        <div class="selfassesment">
+          <a class="nav-link" routerLink="/selfassesment"  mat-button>Self Assesment</a>
+        </div>
+       
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/dashboard"  mat-button>Dashboard</a>
+        <div class="dashboard">
+          <a class="nav-link" routerLink="/dashboard"  mat-button>Dashboard</a>
+      </div>
+       
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/mysurvey"  mat-button>Mysurvey</a>
+       <div class="survey">
+        <a class="nav-link" routerLink="/survey"  mat-button>Mysurvey</a>
+       </div>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" routerLink="/newsurvey"  mat-button>New Survey</a>
+      </li> -->
+      <li class="nav-item">
+      <div class="assesor">
+        <a class="nav-link" routerLink="/assessors"  mat-button>Assessors</a>
+      </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/plansandpricing"  mat-button>Plans and Pricing</a>
-      </li>
-      <li class="nav-item">
+       <div class="stores">
         <a class="nav-link" routerLink="/stores"  mat-button>Stores</a>
+       </div>
+      </li>
+      <li class="nav-item">
+       <div class="plans">
+         
+        <a class="nav-link" routerLink="/plansandpricing"  mat-button>Plans and Pricing</a>
+       </div>
       </li>
       <li class="nav-item nabar-right">
-        <a class="nav-link" routerLink="/upgrades"  mat-button>Upgrades</a>
+        <div class="buttonPosition">
+          <button mat-raised-button class="buttonData" color="Upgrade" routerLink="/upgrade">Upgrade</button>
+       
+        </div>
+         
+        <!-- <a class="nav-link float-right" routerLink="/upgrades"  mat-button>Upgrades</a> -->
       </li>
     </ul>
 
