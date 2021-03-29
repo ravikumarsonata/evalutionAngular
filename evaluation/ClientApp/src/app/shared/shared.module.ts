@@ -115,6 +115,8 @@ import { OverlayModule } from '@angular/cdk/overlay';
     OverlayModule,
     PortalModule,
     ScrollingModule,
+    BrowserAnimationsModule,
+    MatNativeDateModule,
   ],
   exports: [MatButtonModule, MatTabsModule, MatSliderModule,
     A11yModule,
@@ -160,6 +162,9 @@ import { OverlayModule } from '@angular/cdk/overlay';
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule  ]
+    ScrollingModule,
+    BrowserAnimationsModule,
+    MatNativeDateModule,
+  ]
 })
 export class SharedModule { }

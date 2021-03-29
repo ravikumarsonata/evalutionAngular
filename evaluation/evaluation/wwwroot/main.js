@@ -463,6 +463,8 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_54__["ɵɵdefineInje
             _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_53__["OverlayModule"],
             _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"],
             _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"],
+            _angular_material_core__WEBPACK_IMPORTED_MODULE_39__["MatNativeDateModule"],
         ], _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_10__["MatTabsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__["MatSliderModule"],
         _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_14__["A11yModule"],
         _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_15__["ClipboardModule"],
@@ -507,7 +509,9 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_54__["ɵɵdefineInje
         _angular_material_tree__WEBPACK_IMPORTED_MODULE_52__["MatTreeModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_53__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"],
-        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"]] });
+        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_39__["MatNativeDateModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_54__["ɵɵsetNgModuleScope"](SharedModule, { declarations: [_components_alert_alert_component__WEBPACK_IMPORTED_MODULE_2__["AlertComponent"], _components_dialog_dialog_component__WEBPACK_IMPORTED_MODULE_3__["DialogComponent"], _components_loading_panel_loading_panel_component__WEBPACK_IMPORTED_MODULE_4__["LoadingPanelComponent"], _components_popover_popover_component__WEBPACK_IMPORTED_MODULE_5__["PopoverComponent"], _components_toggle_toggle_component__WEBPACK_IMPORTED_MODULE_6__["ToggleComponent"], _components_search_search_component__WEBPACK_IMPORTED_MODULE_7__["SearchComponent"], _components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_8__["BreadcrumbComponent"], _components_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_9__["TabsComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _shared_routing_module__WEBPACK_IMPORTED_MODULE_1__["SharedRoutingModule"],
         _angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
@@ -557,7 +561,9 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_54__["ɵɵdefineInje
         _angular_material_tree__WEBPACK_IMPORTED_MODULE_52__["MatTreeModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_53__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"],
-        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"]], exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_10__["MatTabsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__["MatSliderModule"],
+        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_39__["MatNativeDateModule"]], exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_10__["MatTabsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__["MatSliderModule"],
         _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_14__["A11yModule"],
         _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_15__["ClipboardModule"],
         _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_19__["CdkStepperModule"],
@@ -601,7 +607,9 @@ SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_54__["ɵɵdefineInje
         _angular_material_tree__WEBPACK_IMPORTED_MODULE_52__["MatTreeModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_53__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_17__["PortalModule"],
-        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"]] }); })();
+        _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_18__["ScrollingModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_39__["MatNativeDateModule"]] }); })();
 
 
 /***/ }),
