@@ -263,8 +263,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /* harmony import */ var _mysurveys_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mysurveys-routing.module */ "ioZB");
 /* harmony import */ var _mysurveys_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mysurveys.component */ "NT9P");
-/* harmony import */ var _angular_material_table__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/table */ "+0xr");
-/* harmony import */ var _angular_material_paginator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/paginator */ "M9IT");
+/* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../material/material.module */ "hctd");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
@@ -279,13 +279,13 @@ MysurveysModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNg
 MysurveysModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _mysurveys_routing_module__WEBPACK_IMPORTED_MODULE_1__["MysurveysRoutingModule"],
-            _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTableModule"],
-            _angular_material_paginator__WEBPACK_IMPORTED_MODULE_4__["MatPaginatorModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+            _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](MysurveysModule, { declarations: [_mysurveys_component__WEBPACK_IMPORTED_MODULE_2__["MysurveysComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _mysurveys_routing_module__WEBPACK_IMPORTED_MODULE_1__["MysurveysRoutingModule"],
-        _angular_material_table__WEBPACK_IMPORTED_MODULE_3__["MatTableModule"],
-        _angular_material_paginator__WEBPACK_IMPORTED_MODULE_4__["MatPaginatorModule"]] }); })();
+        _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
+        _material_material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"]] }); })();
 
 
 /***/ }),

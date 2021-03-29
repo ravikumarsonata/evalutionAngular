@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MysurveysRoutingModule } from './mysurveys-routing.module';
 import { MysurveysComponent } from './mysurveys.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MaterialModule } from '../../material/material.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,8 +13,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
   imports: [
     CommonModule,
     MysurveysRoutingModule,
-    MatTableModule,
-    MatPaginatorModule,
+    RouterModule,
+    MaterialModule
   ]
 })
 export class MysurveysModule { }
