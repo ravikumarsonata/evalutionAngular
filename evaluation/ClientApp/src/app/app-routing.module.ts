@@ -14,7 +14,7 @@ const routes: Routes = [
   },
  
 {
-  path:"survey",
+  path:"mysurveys",
   loadChildren: () => import('./components/mysurveys/mysurveys.module').then(m => m.MysurveysModule)
  
 },
@@ -34,7 +34,7 @@ const routes: Routes = [
   
 },
 {
-  path:"newSurvey",
+  path:"newsurvey",
   loadChildren: () => import('./components/newsurvey/newsurvey.module').then(m => m.NewsurveyModule)
   
 },

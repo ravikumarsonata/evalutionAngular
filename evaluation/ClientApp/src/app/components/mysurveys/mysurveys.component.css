@@ -1,0 +1,13 @@
+.text-grey
+{
+    color:grey;
+}
+.leftpanel{
+    min-height:300px;
+}
+.text-align-center {
+  width: 50px;
+  height: 50px;
+  font-size: 20px
+}
+
