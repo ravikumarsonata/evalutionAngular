@@ -1,22 +1,18 @@
-﻿version: 0.2
+﻿version: 0.1
 phases:
   install:
-    runtime-versions:
-      nodejs: 10
-  pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - npm install
       - npm install -g @angular/cli
   build:
     commands:
-      - echo Build started on `date`
-      - ng build --prod --aot
+      - npm install
+      - ng build --prod --configuration=${BUILD_ENV}
   post_build:
-     commands:
-      - mv target/deploy ./
-      - echo Build completed
-
+    commands:
+      - aws s3 cp dist s3://${S3_BUCKET} --recursive
+      - aws configure set preview.cloudfront true
 artifacts:
   files:
-      - deploy/'**/*'
+    - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes
