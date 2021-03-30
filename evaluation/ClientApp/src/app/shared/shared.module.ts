@@ -25,8 +25,6 @@ let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelCompon
   imports: [
     CommonModule,
     RouterModule,
-    MatDialogModule,
-    MatButtonModule,
     MaterialModule
     
   ],
