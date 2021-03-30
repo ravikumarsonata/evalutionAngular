@@ -6,6 +6,7 @@ import { MysurveysComponent } from './mysurveys.component';
 import { MaterialModule } from '../../material/material.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
+import { TableModule } from '../../shared/components/table/table.module';
 
 
 
@@ -15,7 +16,8 @@ import { SharedModule } from '../../shared/shared.module';
     CommonModule,
     MysurveysRoutingModule,
     RouterModule,
-    MaterialModule,
+/*    MaterialModule,*/
+    TableModule,
     SharedModule
   ]
 })
