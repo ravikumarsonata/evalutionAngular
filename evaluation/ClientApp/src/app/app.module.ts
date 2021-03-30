@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material/material.module';
+import { MatDialogModule } from '@angular/material/dialog';
 /*import { SharedModule } from './shared/shared.module';*/
 
 
@@ -22,7 +23,8 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    MatDialogModule,
     
   ],
   providers: [],

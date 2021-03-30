@@ -16,12 +16,16 @@ import { TabsComponent } from './components/tabs/tabs.component';
 
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent, TableComponent]
 @NgModule({
   declarations: [...componentDeclarations],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule,
+    MatButtonModule,
     
   ],
   exports: [
