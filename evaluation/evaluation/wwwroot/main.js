@@ -215,7 +215,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/header/header.component */ "2MiI");
 /* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/footer/footer.component */ "LmEr");
 /* harmony import */ var _material_material_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./material/material.module */ "hctd");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/dialog */ "0IaG");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
 
 
 
@@ -228,19 +232,23 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ providers: [], imports: [[
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"]
+            _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialogModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
         _components_header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
         _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-        _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"]] }); })();
+        _material_material_module__WEBPACK_IMPORTED_MODULE_6__["MaterialModule"],
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_7__["MatDialogModule"],
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"]] }); })();
 
 
 /***/ }),
@@ -393,6 +401,7 @@ let materialModule = [
     _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_7__["PortalModule"],
     _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_8__["ScrollingModule"],
     _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"],
+    _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__["MatDialogModule"],
 ];
 class MaterialModule {
 }
@@ -447,7 +456,8 @@ MaterialModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_44__["ɵɵdefineIn
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_43__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_7__["PortalModule"],
         _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_8__["ScrollingModule"],
-        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"]] });
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"],
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__["MatDialogModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_44__["ɵɵsetNgModuleScope"](MaterialModule, { imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
         _angular_material_tabs__WEBPACK_IMPORTED_MODULE_1__["MatTabsModule"],
         _angular_material_slider__WEBPACK_IMPORTED_MODULE_3__["MatSliderModule"],
@@ -494,7 +504,8 @@ MaterialModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_44__["ɵɵdefineIn
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_43__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_7__["PortalModule"],
         _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_8__["ScrollingModule"],
-        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"]], exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"],
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__["MatDialogModule"]], exports: [_angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
         _angular_material_tabs__WEBPACK_IMPORTED_MODULE_1__["MatTabsModule"],
         _angular_material_slider__WEBPACK_IMPORTED_MODULE_3__["MatSliderModule"],
         _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__["A11yModule"],
@@ -540,7 +551,8 @@ MaterialModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_44__["ɵɵdefineIn
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_43__["OverlayModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_7__["PortalModule"],
         _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_8__["ScrollingModule"],
-        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"]] }); })();
+        _angular_material_core__WEBPACK_IMPORTED_MODULE_29__["MatNativeDateModule"],
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_21__["MatDialogModule"]] }); })();
 
 
 /***/ }),

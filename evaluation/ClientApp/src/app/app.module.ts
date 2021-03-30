@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material/material.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 /*import { SharedModule } from './shared/shared.module';*/
 
 
@@ -25,6 +26,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     MaterialModule,
     MatDialogModule,
+    HttpClientModule 
     
   ],
   providers: [],
