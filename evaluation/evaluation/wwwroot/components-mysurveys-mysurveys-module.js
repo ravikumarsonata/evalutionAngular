@@ -23,32 +23,6 @@ BreadcrumbComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 
 /***/ }),
 
-/***/ "8kBh":
-/*!*********************************************************!*\
-  !*** ./src/app/shared/components/table/table.module.ts ***!
-  \*********************************************************/
-/*! exports provided: TableModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TableModule", function() { return TableModule; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-
-class TableModule {
-}
-TableModule.ɵfac = function TableModule_Factory(t) { return new (t || TableModule)(); };
-TableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: TableModule });
-TableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](TableModule, { imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]] }); })();
-
-
-/***/ }),
-
 /***/ "DHTX":
 /*!**************************************************************!*\
   !*** ./src/app/shared/components/toggle/toggle.component.ts ***!
@@ -599,9 +573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mysurveys_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mysurveys.component */ "NT9P");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/shared.module */ "PCNd");
-/* harmony import */ var _shared_components_table_table_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../shared/components/table/table.module */ "8kBh");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -611,20 +583,20 @@ __webpack_require__.r(__webpack_exports__);
 class MysurveysModule {
 }
 MysurveysModule.ɵfac = function MysurveysModule_Factory(t) { return new (t || MysurveysModule)(); };
-MysurveysModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: MysurveysModule });
-MysurveysModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ imports: [[
+MysurveysModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({ type: MysurveysModule });
+MysurveysModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _mysurveys_routing_module__WEBPACK_IMPORTED_MODULE_1__["MysurveysRoutingModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"],
             /*    MaterialModule,*/
-            _shared_components_table_table_module__WEBPACK_IMPORTED_MODULE_5__["TableModule"],
+            /*TableModule,*/
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](MysurveysModule, { declarations: [_mysurveys_component__WEBPACK_IMPORTED_MODULE_2__["MysurveysComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](MysurveysModule, { declarations: [_mysurveys_component__WEBPACK_IMPORTED_MODULE_2__["MysurveysComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _mysurveys_routing_module__WEBPACK_IMPORTED_MODULE_1__["MysurveysRoutingModule"],
         _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"],
         /*    MaterialModule,*/
-        _shared_components_table_table_module__WEBPACK_IMPORTED_MODULE_5__["TableModule"],
+        /*TableModule,*/
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_4__["SharedModule"]] }); })();
 
 
