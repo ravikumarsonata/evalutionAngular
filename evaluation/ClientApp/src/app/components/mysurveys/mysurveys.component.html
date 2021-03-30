@@ -100,36 +100,72 @@
                 <mat-table #table [dataSource]="dataSource">
 
                   <!-- Position Column -->
-                  <ng-container matColumnDef="position">
-                    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
-                    <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+                  <ng-container matColumnDef="title">
+                    <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
                   </ng-container>
 
                   <!-- Name Column -->
-                  <ng-container matColumnDef="name">
-                    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-                    <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+                  <ng-container matColumnDef="modified">
+                    <mat-header-cell *matHeaderCellDef> Modified </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.modified}} </mat-cell>
                   </ng-container>
 
                   <!-- Weight Column -->
-                  <ng-container matColumnDef="weight">
-                    <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
-                    <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+                  <ng-container matColumnDef="response">
+                    <mat-header-cell *matHeaderCellDef> Response </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.response}} </mat-cell>
                   </ng-container>
 
                   <!-- Symbol Column -->
-                  <ng-container matColumnDef="symbol">
-                    <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
-                    <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+                 
+
+                  <ng-container matColumnDef="share">
+                    <mat-header-cell *matHeaderCellDef> Share </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.share}}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                      </svg>
+                       </mat-cell> 
+                   
                   </ng-container>
 
+                  <ng-container matColumnDef="analyze">
+                    <mat-header-cell *matHeaderCellDef> Analyze </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.analyze}} 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-graph-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5z" />
+                      </svg> 
+                     
+                    </mat-cell>
+                  </ng-container>
+
+                  <ng-container matColumnDef="more">
+                    <mat-header-cell *matHeaderCellDef> More </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.more}}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                      </svg>
+                     </mat-cell>
+                  </ng-container>
+
+
+                  <ng-container matColumnDef="symbol">
+                    <mat-header-cell *matHeaderCellDef> Design </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.symbol}}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                      </svg> </mat-cell>
+                  </ng-container>
                   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
                 </mat-table>
 
                 <mat-paginator #paginator
                                [pageSize]="3"
-                               [pageSizeOptions]="[5, 10, 20]"
+                               [pageSizeOptions]="[3,5, 10, 20]"
                                [showFirstLastButtons]="true">
                 </mat-paginator>
               </div>

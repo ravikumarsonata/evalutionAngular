@@ -20,7 +20,7 @@
 .example-container {
   display: flex;
   flex-direction: column;
-  max-height: 500px;
+  max-height: 400px;
   min-width: 300px;
 }
 
@@ -29,4 +29,6 @@
   max-height: 500px;
 
 }
-
+.mat-header-cell{
+  background-color: #cccaca;
+  }

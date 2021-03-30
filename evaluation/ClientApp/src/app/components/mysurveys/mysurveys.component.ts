@@ -9,7 +9,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./mysurveys.component.css']
 })
 export class MysurveysComponent implements OnInit {
-    displayedColumns = ['position', 'name', 'weight', 'symbol'];
+    displayedColumns = ['title', 'modified', 'response', 'symbol','share','analyze','more'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: any;
@@ -24,31 +24,34 @@ export class MysurveysComponent implements OnInit {
 
 }
 export interface Element {
-  name: string;
-  position: number;
-  weight: number;
+  modified: string;
+  title: string;
+  response: string;
   symbol: string;
+  share: string;
+  analyze: string;
+  more: string;
 }
 
 const ELEMENT_DATA: Element[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-  { position: 11, name: 'Sodium', weight: 22.9897, symbol: 'Na' },
-  { position: 12, name: 'Magnesium', weight: 24.305, symbol: 'Mg' },
-  { position: 13, name: 'Aluminum', weight: 26.9815, symbol: 'Al' },
-  { position: 14, name: 'Silicon', weight: 28.0855, symbol: 'Si' },
-  { position: 15, name: 'Phosphorus', weight: 30.9738, symbol: 'P' },
-  { position: 16, name: 'Sulfur', weight: 32.065, symbol: 'S' },
-  { position: 17, name: 'Chlorine', weight: 35.453, symbol: 'Cl' },
-  { position: 18, name: 'Argon', weight: 39.948, symbol: 'Ar' },
-  { position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K' },
-  { position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca' },
+  { title: 'GBW Demo Campaign', modified: '15/07/2020', response: '485', symbol: '' ,share:'',analyze:'',more:''},
+  { title: 'GBW Test Campaign', modified: '05/07/2020', response: '482', symbol: '',share:'',analyze:'',more:'' },
+  { title: 'GBW Test', modified: '01/07/2020', response: 'draft', symbol: '' ,share:'',analyze:'',more:''},
+  { title: '4', modified: 'Beryllium', response: '9.0122', symbol: '',share:'',analyze:'',more:'' },
+  { title: '5', modified: 'Boron', response: '10.811', symbol: '' ,share:'',analyze:'',more:''},
+  { title: '6', modified: 'Carbon', response: '12.0107', symbol: '' ,share:'',analyze:'',more:''},
+  { title: '7', modified: 'Nitrogen', response: '14.0067', symbol: '',share:'',analyze:'',more:'' },
+  { title: '8', modified: 'Oxygen', response: '15.9994', symbol: '',share:'',analyze:'',more:'' },
+  { title: '9', modified: 'Fluorine', response: '18.9984', symbol: '',share:'',analyze:'',more:'m' },
+  { title: '10', modified: 'Neon', response: '20.1797', symbol: '',share:'',analyze:'',more:'' },
+  { title: '11', modified: 'Sodium', response: '22.9897', symbol: '' ,share:'',analyze:'',more:''},
+  { title: '12', modified: 'Magnesium', response:'24.305', symbol: '',share:'',analyze:'',more:'' },
+  { title: '13', modified: 'Aluminum', response: '26.9815', symbol: '',share:'',analyze:'',more:'' },
+  { title: '14', modified: 'Silicon', response: '28.0855', symbol: '',share:'',analyze:'',more:'' },
+  { title: '15', modified: 'Phosphorus', response: '30.9738', symbol: '' ,share:'',analyze:'',more:''},
+  { title: '16', modified: 'Sulfur', response: '32.065', symbol: '',share:'',analyze:'',more:'' },
+  { title: '17', modified: 'Chlorine', response: '35.453', symbol: '',share:'',analyze:'',more:'' },
+  { title: '18', modified: 'Argon', response: '39.948', symbol: '',share:'',analyze:'',more:'' },
+  { title: '19', modified: 'Potassium', response: '39.0983', symbol: '',share:'',analyze:'',more:'' },
+  { title: '20', modified: 'Calcium', response: '40.078', symbol: '',share:'',analyze:'',more:'' },
 ];
