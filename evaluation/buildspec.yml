@@ -16,6 +16,7 @@ phases:
      commands:
       - mv target/deploy ./
       - echo Build completed
+
 artifacts:
   files:
       - deploy/'**/*'
