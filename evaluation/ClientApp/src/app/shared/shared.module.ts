@@ -6,7 +6,7 @@ import { DialogComponent } from './components/dialog/dialog.component';
 import { LoadingPanelComponent } from './components/loading-panel/loading-panel.component';
 import { PopoverComponent } from './components/popover/popover.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
-import { TableComponent } from './components/table/table.component';
+/*import { TableComponent } from './components/table/table.component';*/
 import { SearchComponent } from './components/search/search.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { TabsComponent } from './components/tabs/tabs.component';
@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { TableComponent } from './components/table/table.component';
 let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent, TableComponent]
 @NgModule({
   declarations: [...componentDeclarations],
@@ -26,6 +27,7 @@ let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelCompon
     RouterModule,
     MatDialogModule,
     MatButtonModule,
+    MaterialModule
     
   ],
   exports: [
