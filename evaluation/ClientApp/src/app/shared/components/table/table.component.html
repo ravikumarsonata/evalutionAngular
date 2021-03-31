@@ -1,29 +1,27 @@
+<!--<div class="example-container mat-elevation-z8">-->
+<!--{{datasource.columnSettings | json}}-->
+<!--{{datasource.datasource | json}}-->
+<!--<mat-table #table [dataSource]="datasource.datasource">
 
-<div class="example-container mat-elevation-z8">
-  <!--{{datasource.columnSettings | json}}
-  {{datasource.datasource | json}}-->
-
-  <mat-table #table [dataSource]="datasource.datasource">
-
-     Position Column 
+     Position Column
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
     </ng-container>
 
-     Name Column 
+     Name Column
     <ng-container matColumnDef="modified">
       <mat-header-cell *matHeaderCellDef> Modified </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.modified}} </mat-cell>
     </ng-container>
 
-     Weight Column 
+     Weight Column
     <ng-container matColumnDef="response">
       <mat-header-cell *matHeaderCellDef> Response </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.response}} </mat-cell>
     </ng-container>
 
-     Symbol Column 
+     Symbol Column
 
 
     <ng-container matColumnDef="share">
@@ -79,45 +77,36 @@
                  [pageSizeOptions]="[5, 10, 20]"
                  [showFirstLastButtons]="true">
   </mat-paginator>
-</div>
+</div>-->
+<!--{{datasource | json}}-->
+
+<div class="example-container mat-elevation-z8">
 
 
+  <mat-table *ngIf="matdataSource" #table [dataSource]="matdataSource">
 
-
-
-
-
-
-
-
-
-<!--<div class="example-container mat-elevation-z8">
- 
-
-  <mat-table #table [dataSource]="dataSource">-->
-
-    <!-- Position Column -->
-    <!--<ng-container matColumnDef="title">
+    Position Column
+    <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
-    </ng-container>-->
+    </ng-container>
 
-    <!-- Name Column -->
-    <!--<ng-container matColumnDef="modified">
+    Name Column
+    <ng-container matColumnDef="modified">
       <mat-header-cell *matHeaderCellDef> Modified </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.modified}} </mat-cell>
-    </ng-container>-->
+    </ng-container>
 
-    <!-- Weight Column -->
-    <!--<ng-container matColumnDef="response">
+    Weight Column
+    <ng-container matColumnDef="response">
       <mat-header-cell *matHeaderCellDef> Response </mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.response}} </mat-cell>
-    </ng-container>-->
+    </ng-container>
 
-    <!-- Symbol Column -->
+    Symbol Column
 
 
-    <!--<ng-container matColumnDef="share">
+    <ng-container matColumnDef="share">
       <mat-header-cell *matHeaderCellDef> Share </mat-header-cell>
       <mat-cell *matCellDef="let element">
         {{element.share}}
@@ -170,5 +159,5 @@
                  [pageSizeOptions]="[5, 10, 20]"
                  [showFirstLastButtons]="true">
   </mat-paginator>
-</div>-->
+</div>
 

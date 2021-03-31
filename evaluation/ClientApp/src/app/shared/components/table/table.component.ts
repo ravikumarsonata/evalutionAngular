@@ -1,29 +1,46 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
-export class TableComponent implements OnInit {
+export class TableComponent implements OnInit, AfterViewInit {
 
-  @Input() datasource: any;
+/*  @Input() datasource: any;*/
 
+  _datasource: any;
+  get datasource(): any {
+    return this._datasource;
+  }
+  @Input() set datasource(value: any) {
+    this._datasource = value;
+    this.matdataSource = new MatTableDataSource<Element>(this.datasource.datasource);
+    this.matdataSource.paginator = this.paginator;
+  }
 
+  matdataSource:any;
   displayedColumns = ['title', 'modified', 'response', 'symbol', 'share', 'analyze', 'more'];
-  dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
+
 
   @ViewChild(MatPaginator) paginator: any;
-  constructor() { }
+  constructor() {
+    console.log(this.datasource);
+
+  }
 
   ngOnInit(): void {
+  
   }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-
+    
+     this.matdataSource = new MatTableDataSource<Element>(this.datasource.datasource);
+    this.matdataSource.paginator = this.paginator;
+   
   }
 
 }
