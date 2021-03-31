@@ -12,7 +12,7 @@ export class TableComponent implements OnInit {
   @Input() datasource: any;
 
 
-  /*  displayedColumns = ['title', 'modified', 'response', 'symbol', 'share', 'analyze', 'more'];*/
+  displayedColumns = ['title', 'modified', 'response', 'symbol', 'share', 'analyze', 'more'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: any;
@@ -23,6 +23,7 @@ export class TableComponent implements OnInit {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+
   }
 
 }
