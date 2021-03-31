@@ -15,7 +15,7 @@ import { MaterialModule } from '../material/material.module';
 
 import { TableComponent } from './components/table/table.component';
 import { ErrorComponent } from './components/error/error.component';
-let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent, TableComponent, ErrorComponent]
+let componentDeclarations = [AlertComponent, DialogComponent, LoadingPanelComponent, PopoverComponent, ToggleComponent, SearchComponent, BreadcrumbComponent, TabsComponent, TableComponent, ErrorComponent, LoadingPanelComponent]
 @NgModule({
   declarations: [...componentDeclarations],
   imports: [
