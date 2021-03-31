@@ -1,22 +1,26 @@
+
 <div class="example-container mat-elevation-z8">
-  <mat-table #table [dataSource]="dataSource">
+  <!--{{datasource.columnSettings | json}}
+  {{datasource.datasource | json}}-->
+
+  <mat-table #table [dataSource]="datasource.datasource">
 
     <!-- Position Column -->
     <ng-container matColumnDef="title">
       <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.title}} </mat-cell>
+      <mat-cell *matCellDef="let datasource"> {{datasource.title}} </mat-cell>
     </ng-container>
 
     <!-- Name Column -->
     <ng-container matColumnDef="modified">
       <mat-header-cell *matHeaderCellDef> Modified </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.modified}} </mat-cell>
+      <mat-cell *matCellDef="let datasource"> {{datasource.modified}} </mat-cell>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="response">
       <mat-header-cell *matHeaderCellDef> Response </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.response}} </mat-cell>
+      <mat-cell *matCellDef="let datasource"> {{datasource.response}} </mat-cell>
     </ng-container>
 
     <!-- Symbol Column -->
@@ -66,8 +70,8 @@
         </svg>
       </mat-cell>
     </ng-container>
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-header-row *matHeaderRowDef="datasource.columnSettings"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: datasource.columnSettings;"></mat-row>
   </mat-table>
 
   <mat-paginator #paginator
@@ -76,3 +80,4 @@
                  [showFirstLastButtons]="true">
   </mat-paginator>
 </div>
+

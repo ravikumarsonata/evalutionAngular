@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -9,7 +9,10 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class TableComponent implements OnInit {
 
-  displayedColumns = ['title', 'modified', 'response', 'symbol', 'share', 'analyze', 'more'];
+  @Input() datasource: any;
+
+
+  /*  displayedColumns = ['title', 'modified', 'response', 'symbol', 'share', 'analyze', 'more'];*/
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: any;
@@ -55,3 +58,4 @@ const ELEMENT_DATA: Element[] = [
   { title: '19', modified: 'Potassium', response: '39.0983', symbol: '', share: '', analyze: '', more: '' },
   { title: '20', modified: 'Calcium', response: '40.078', symbol: '', share: '', analyze: '', more: '' },
 ];
+
