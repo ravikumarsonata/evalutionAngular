@@ -50,7 +50,11 @@ const routes: Routes = [
 {
   path:"upgrade",
   loadChildren: () => import('./components/upgrade/upgrade.module').then(m => m.UpgradeModule)
-},
+  },
+  {
+    path: "questionnaire",
+    loadChildren: () => import('./components/questionnaire/questionnaire.module').then(m => m.QuestionnaireModule)
+  },
 //{
 //  path: '',
 //  redirectTo: '',
