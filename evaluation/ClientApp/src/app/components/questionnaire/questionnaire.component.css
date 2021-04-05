@@ -1,0 +1,12 @@
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+.question{
+    background-color: #f1e7e7;
+}
+.data{
+    margin-left: 276px;
+}
