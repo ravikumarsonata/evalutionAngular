@@ -57,7 +57,7 @@ class HeaderComponent {
     }
 }
 HeaderComponent.ɵfac = function HeaderComponent_Factory(t) { return new (t || HeaderComponent)(); };
-HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 36, vars: 0, consts: [[1, "navbar", "navbar-expand-md", "navbar-dark", "bg-primary"], ["href", "#", 1, "navbar-brand", "abs"], ["type", "button", "data-toggle", "collapse", "data-target", "#collapsingNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "collapsingNavbar", 1, "navbar-collapse", "collapse"], [1, "navbar-nav"], [1, "nav-item", "active"], ["mat-mini-fab", "", "color", "mini-info", 2, "background-color", "darkcyan"], ["routerLink", "/selfassesment", "mat-button", "", 1, "nav-link"], [1, "nav-item"], ["routerLink", "/dashboard", "mat-button", "", 1, "nav-link"], ["routerLink", "/mysurveys", "mat-button", "", 1, "nav-link"], ["routerLink", "/assessors", "mat-button", "", 1, "nav-link"], ["routerLink", "/stores", "mat-button", "", 1, "nav-link"], ["routerLink", "/plansandpricing", "mat-button", "", 1, "nav-link"], [1, "navbar-nav", "ml-auto"], ["routerLink", "/upgrade", "mat-button", "", 1, "nav-link", "mat-raised-button", "light-button"], ["routerLink", "/newsurvey", "mat-button", "", 1, "nav-link"], ["mat-mini-fab", "", "color", "mini-secondary"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
+HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HeaderComponent, selectors: [["app-header"]], decls: 39, vars: 0, consts: [[1, "navbar", "navbar-expand-md", "navbar-dark", "bg-primary"], ["href", "#", 1, "navbar-brand", "abs"], ["type", "button", "data-toggle", "collapse", "data-target", "#collapsingNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "collapsingNavbar", 1, "navbar-collapse", "collapse"], [1, "navbar-nav"], [1, "nav-item", "active"], ["mat-mini-fab", "", "color", "mini-info", 2, "background-color", "darkcyan"], ["routerLink", "/selfassesment", "mat-button", "", 1, "nav-link"], [1, "nav-item"], ["routerLink", "/dashboard", "mat-button", "", 1, "nav-link"], ["routerLink", "/mysurveys", "mat-button", "", 1, "nav-link"], ["routerLink", "/assessors", "mat-button", "", 1, "nav-link"], ["routerLink", "/stores", "mat-button", "", 1, "nav-link"], ["routerLink", "/plansandpricing", "mat-button", "", 1, "nav-link"], ["routerLink", "/questionnaire", "mat-button", "", 1, "nav-link"], [1, "navbar-nav", "ml-auto"], ["routerLink", "/upgrade", "mat-button", "", 1, "nav-link", "mat-raised-button", "light-button"], ["routerLink", "/newsurvey", "mat-button", "", 1, "nav-link"], ["mat-mini-fab", "", "color", "mini-secondary"]], template: function HeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Navbar 1");
@@ -98,21 +98,26 @@ HeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Plans & Pricing");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " Upgrade");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "a", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Questionnaire");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "ul", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " New Survey");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " Upgrade");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "li", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "button", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "YT");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "a", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " New Survey");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "button", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "YT");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1203,6 +1208,10 @@ const routes = [
     {
         path: "upgrade",
         loadChildren: () => __webpack_require__.e(/*! import() | components-upgrade-upgrade-module */ "components-upgrade-upgrade-module").then(__webpack_require__.bind(null, /*! ./components/upgrade/upgrade.module */ "fpCc")).then(m => m.UpgradeModule)
+    },
+    {
+        path: "questionnaire",
+        loadChildren: () => __webpack_require__.e(/*! import() | components-questionnaire-questionnaire-module */ "components-questionnaire-questionnaire-module").then(__webpack_require__.bind(null, /*! ./components/questionnaire/questionnaire.module */ "ZuBL")).then(m => m.QuestionnaireModule)
     },
 ];
 class AppRoutingModule {
