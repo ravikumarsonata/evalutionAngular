@@ -1,10 +1,10 @@
-<div class="container-fluid">
+<!--<div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
       <h2 class="font-weight-lighter text-grey mt-4 mb-4">My Surveys</h2>
-      <div class="search-input">
+      <div class="search-input">-->
         <!--<button mat-button (click)="openDialog()">Open dialog</button>-->
-      </div>
+      <!--</div>
     </div>
   </div>
   <div class="row ">
@@ -66,13 +66,13 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="list-inline">
-              <li class="list-inline-item">
+              <li class="list-inline-item">-->
                 <!--<span class="glyphicon glyphicon-search"></span>
                 <input matInput
                        placeholder="Search"
                        autocomplete="off" />-->
                 <!-- Another variation with a button -->
-                <div class="input-group">
+                <!--<div class="input-group">
                   <button class="btn btn-default border-left border-top border-bottom bg-white" type="button">
                     <i class="fa fa-search"></i>
                   </button>
@@ -104,8 +104,87 @@
 
     </div>
   </div>
-</div>
+</div>-->
 
 
+<mat-tab-group [@.disabled]="true">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>home</mat-icon>
+    </ng-template>
 
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+            <table class="table table-bordered table-striped mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+             
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Mark</td>
+               
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Jacob</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Larry</td>
+                
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-5">
+          fdfd
+        </div>
+        <div class="col-md-5">
+          fd
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>login</mat-icon>
+    </ng-template>
+    Content 2
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label >
+      <mat-icon>code</mat-icon>
+    </ng-template>
+    Content 3
+  </mat-tab>
+</mat-tab-group>
 

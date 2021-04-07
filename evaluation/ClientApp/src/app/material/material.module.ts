@@ -99,7 +99,7 @@ let materialModule = [
   PortalModule,
   ScrollingModule,
   MatNativeDateModule,
-  MatDialogModule ,
+  MatDialogModule,
 ]
 @NgModule({
   declarations: [],

@@ -16,7 +16,7 @@ import { TableModule } from '../../shared/components/table/table.module';
     CommonModule,
     MysurveysRoutingModule,
     RouterModule,
-/*    MaterialModule,*/
+    MaterialModule,
     /*TableModule,*/
     SharedModule
   ]

@@ -21,7 +21,9 @@ export class AppComponent implements AfterViewInit {
         if (routerEvent instanceof NavigationEnd ||
           routerEvent instanceof NavigationError ||
           routerEvent instanceof NavigationCancel) {
+
           this.showLoadingIndiator = false;
+
         }
       });
     }
