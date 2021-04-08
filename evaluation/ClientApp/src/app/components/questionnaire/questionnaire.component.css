@@ -48,9 +48,9 @@ mat-tab-body {
 /* Styles for the active tab label */
 :host ::ng-deep.mat-tab-label.mat-tab-label-active {
   background-color: transparent;
-  color: red;
-  background-color: yellow;
-  border-right: 2px solid red;
+  color: white;
+  background-color: lightseagreen;
+  border-right: 2px solid white;
 }
 /* Styles for the active tab label */
 :host ::ng-deep.mat-tab-label {
@@ -73,4 +73,24 @@ mat-tab-body {
 
 .mat-tab-list {
   min-width: 60px !important;
+}
+ .questionIcon{
+    width: 113%;
+   
+    height: 541px;
+} 
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+.data,.questionPage{
+    margin-left: 276px;
+}
+.questionData{
+    height: 543px;
+}
+.image{
+    width: 20%;
 }
