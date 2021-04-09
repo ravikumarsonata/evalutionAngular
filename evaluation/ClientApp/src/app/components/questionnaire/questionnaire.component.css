@@ -59,7 +59,7 @@ mat-tab-body {
 }
 
 
-table  tbody {
+table tbody {
   display: block;
   max-height: 300px;
   overflow-y: scroll;
