@@ -1,0 +1,82 @@
+<div class="container-fluid p-0">
+    <div class="row-fluid">
+      <div
+        class="col-md-4 col-sm-5 col-xs-12 login-right login-right-new float-left"
+      >
+      <h3>Welcome to</h3>
+      <h1>Self Assessment</h1>
+        <div class="main-left-wrapper">
+          <div class="new-login-form">
+            <form action="" >
+              <div class="form-group login-field">
+                <mat-form-field appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input
+                    matInput
+                    placeholder="Enter Username"
+                    name="username"
+                    formControlName="username"
+                    required
+                    autocomplete="off"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="form-group mt-1 login-field margin-password">
+                <mat-form-field appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input
+                    matInput
+                    type="password"
+                    placeholder="Enter Password"
+                    name="password"
+                    formControlName="password"
+                    required
+                    autocomplete="off"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="forget-pass-main">
+                <a
+                  class="forget-pass forget-pass-new"
+                  [routerLink]="['/fpwd']"
+                  target="_blank"
+                  routerLinkActive="router-link-active"
+                  >Forgot Password?</a
+                >
+                
+              </div>
+              <div class="margin-bottom20px clearfix mt-3">
+                <button
+                  mat-raised-button
+                  color="primary"
+                  type="submit"
+                  value="LOGIN"
+                  class="login-btn btn-primary"
+                 
+                >
+                  LOGIN
+                </button>
+              </div>
+              <div class="margin-bottom20px clearfix mt-3">
+                <button
+                  mat-raised-button
+                  color="primary"
+                  type="submit"
+                  value="LOGIN"
+                  class="login-btn btn-primary"
+                 
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
+        
+  
+        
+        </div>
+      </div>
+     
+     
+    </div>
+  </div>

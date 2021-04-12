@@ -55,6 +55,10 @@ const routes: Routes = [
     path: "questionnaire",
     loadChildren: () => import('./components/questionnaire/questionnaire.module').then(m => m.QuestionnaireModule)
   },
+  {
+    path: "login",
+    loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule)
+  },
 //{
 //  path: '',
 //  redirectTo: '',
