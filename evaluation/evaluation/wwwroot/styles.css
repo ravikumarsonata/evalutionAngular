@@ -22,5 +22,14 @@ footer {
   text-align: center;
 }
 
+.mat-tab-label {
+  padding: 0px !important;
+  min-width: 0px !important
+}
+
+.mat-tab-labels {
+  width: 50px !important;
+}
+
 
 /*# sourceMappingURL=styles.css.map*/
