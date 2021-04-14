@@ -10,7 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
-import { SharedModule } from './shared/shared.module';
+/*import { SharedModule } from './shared/shared.module';*/
 
 /*import { SharedModule } from './shared/shared.module';*/
 
@@ -27,8 +27,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    HttpClientModule,
-    SharedModule
+    HttpClientModule
     
   ],
   providers: [],
