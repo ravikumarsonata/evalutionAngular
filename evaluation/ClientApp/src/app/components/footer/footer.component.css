@@ -1,0 +1,15 @@
+.footer-copyright {
+  color: #C6C6C6
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .footer-copyright {
+    padding-top: 200px !important;
+  }
+}
+
+@media only screen and (device-width: 812px) {
+  .footer-copyright {
+    padding-top: 200px !important;
+  }
+}
