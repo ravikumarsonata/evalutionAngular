@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionnaireComponent implements OnInit {
   public showquestion: boolean = true;
+  public showmultiplechoiselabel: boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -15,6 +17,11 @@ export class QuestionnaireComponent implements OnInit {
   //  alert('test');
  
   //}
+
+  showmultiple() {
+
+    this.showmultiplechoiselabel = true;
+  }
   showquestionmethod() {
 
     this.showquestion = false;
