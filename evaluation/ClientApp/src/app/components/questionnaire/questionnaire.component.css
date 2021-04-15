@@ -64,7 +64,49 @@ table tbody {
   max-height: 300px;
   overflow-y: scroll;
 }
+.sideMenu tbody {
+  display: block;
+  max-height: 410px !important;
+  overflow-y: scroll;
+}
+.sideMenu ::-webkit-scrollbar {
+  width: 5px !important;
+}
 
+/* Track */
+.sideMenu ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.sideMenu ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+  /* Handle on hover */
+ .sideMenu ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* ---------*/
+
+  .questionTbl ::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  
+  /* Track */
+  .questionTbl ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .questionTbl ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .questionTbl ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
   table thead, table tbody tr {
     display: table;
     width: 100%;
