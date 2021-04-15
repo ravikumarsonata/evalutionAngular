@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class QuestionnaireComponent implements OnInit {
   public showquestion: boolean = true;
   public showmultiplechoiselabel: boolean = false;
+  public showradiobuttonlabel: boolean = false;
+  
   
   constructor() { }
 
@@ -21,6 +23,11 @@ export class QuestionnaireComponent implements OnInit {
   showmultiple() {
 
     this.showmultiplechoiselabel = true;
+    this.showradiobuttonlabel = false;
+  }
+  showradio() {
+    this.showradiobuttonlabel = true;
+    this.showmultiplechoiselabel = false;
   }
   showquestionmethod() {
 
