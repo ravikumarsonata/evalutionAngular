@@ -159,11 +159,11 @@ FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || F
 FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 4, vars: 0, consts: [[1, "mt-auto"], [1, "footer-copyright", "text-center", "py-3"], ["src", "assets/images/gbw.png", "alt", "GBW", 1, "float-right"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "footer", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Terms and Conditions | Privacy Policy | Cookies Policy Copyright \u00A9 2020 GAPbuster Worldwide ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Terms and Conditions | Privacy Policy | Cookies Policy Copyright \u00A9 2020 GAPbuster Worldwide Sonata ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJmb290ZXIuY29tcG9uZW50LmNzcyJ9 */"] });
+    } }, styles: [".footer-copyright[_ngcontent-%COMP%] {\r\n  color: #C6C6C6\r\n}\r\n\r\n@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {\r\n  .footer-copyright[_ngcontent-%COMP%] {\r\n    padding-top: 200px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (device-width: 812px) {\r\n  .footer-copyright[_ngcontent-%COMP%] {\r\n    padding-top: 200px !important;\r\n  }\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsNkJBQTZCO0VBQy9CO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLDZCQUE2QjtFQUMvQjtBQUNGIiwiZmlsZSI6ImZvb3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3Rlci1jb3B5cmlnaHQge1xyXG4gIGNvbG9yOiAjQzZDNkM2XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi1kZXZpY2Utd2lkdGg6IDMyMHB4KSBhbmQgKG1heC1kZXZpY2Utd2lkdGg6IDU2OHB4KSB7XHJcbiAgLmZvb3Rlci1jb3B5cmlnaHQge1xyXG4gICAgcGFkZGluZy10b3A6IDIwMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChkZXZpY2Utd2lkdGg6IDgxMnB4KSB7XHJcbiAgLmZvb3Rlci1jb3B5cmlnaHQge1xyXG4gICAgcGFkZGluZy10b3A6IDIwMHB4ICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"] });
 
 
 /***/ }),
@@ -597,7 +597,7 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: "",
-        loadChildren: () => __webpack_require__.e(/*! import() | components-mysurveys-mysurveys-module */ "components-mysurveys-mysurveys-module").then(__webpack_require__.bind(null, /*! ./components/mysurveys/mysurveys.module */ "cGo6")).then(m => m.MysurveysModule)
+        loadChildren: () => Promise.all(/*! import() | components-mysurveys-mysurveys-module */[__webpack_require__.e("common"), __webpack_require__.e("components-mysurveys-mysurveys-module")]).then(__webpack_require__.bind(null, /*! ./components/mysurveys/mysurveys.module */ "cGo6")).then(m => m.MysurveysModule)
     },
     {
         path: "selfassesment",
@@ -609,7 +609,7 @@ const routes = [
     },
     {
         path: "mysurveys",
-        loadChildren: () => __webpack_require__.e(/*! import() | components-mysurveys-mysurveys-module */ "components-mysurveys-mysurveys-module").then(__webpack_require__.bind(null, /*! ./components/mysurveys/mysurveys.module */ "cGo6")).then(m => m.MysurveysModule)
+        loadChildren: () => Promise.all(/*! import() | components-mysurveys-mysurveys-module */[__webpack_require__.e("common"), __webpack_require__.e("components-mysurveys-mysurveys-module")]).then(__webpack_require__.bind(null, /*! ./components/mysurveys/mysurveys.module */ "cGo6")).then(m => m.MysurveysModule)
     },
     {
         path: "assessors",
@@ -637,7 +637,7 @@ const routes = [
     },
     {
         path: "questionnaire",
-        loadChildren: () => __webpack_require__.e(/*! import() | components-questionnaire-questionnaire-module */ "components-questionnaire-questionnaire-module").then(__webpack_require__.bind(null, /*! ./components/questionnaire/questionnaire.module */ "ZuBL")).then(m => m.QuestionnaireModule)
+        loadChildren: () => Promise.all(/*! import() | components-questionnaire-questionnaire-module */[__webpack_require__.e("common"), __webpack_require__.e("components-questionnaire-questionnaire-module")]).then(__webpack_require__.bind(null, /*! ./components/questionnaire/questionnaire.module */ "ZuBL")).then(m => m.QuestionnaireModule)
     },
     {
         path: "login",
