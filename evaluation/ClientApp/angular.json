@@ -123,16 +123,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "evaluation:serve"
+            "devServerTarget": "eValuate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "evaluation:serve:production"
+              "devServerTarget": "eValuate:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "evaluation"
+  "defaultProject": "eValuate"
 }
