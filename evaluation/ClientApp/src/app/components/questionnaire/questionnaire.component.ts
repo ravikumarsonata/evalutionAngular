@@ -12,7 +12,12 @@ export class QuestionnaireComponent implements OnInit {
   public showquestion: boolean = true;
   public showmultiplechoiselabel: boolean = false;
   public showradiobuttonlabel: boolean = false;
-  
+  public showYesNo = false;
+  public showDropdownLabel= false;
+  public showSliderLabel = false;
+  public showLong = false;
+  public showShort =  false;
+  public showDate = false;
   
   constructor(public dialog: MatDialog) { }
 
@@ -32,12 +37,84 @@ export class QuestionnaireComponent implements OnInit {
   //}
 
   showmultiple() {
-
+    this.showDate = false;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=false;
     this.showmultiplechoiselabel = true;
     this.showradiobuttonlabel = false;
+    this.showYesNo = false;
+    this.showDropdownLabel = false;
   }
   showradio() {
+    this.showDate = false;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=false;
     this.showradiobuttonlabel = true;
+    this.showmultiplechoiselabel = false;
+    this.showYesNo = false;
+    this.showDropdownLabel = false;
+  }
+  showYesNO(){
+    this.showDate = false;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=false;
+    this.showYesNo = true;
+    this.showradiobuttonlabel = false;
+    this.showmultiplechoiselabel = false;
+    this.showDropdownLabel = false;
+  }
+  showDropdown(){
+    this.showDate = false;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=false;
+    this.showDropdownLabel = true;
+    this.showYesNo = false;
+    this.showradiobuttonlabel = false;
+    this.showmultiplechoiselabel = false;
+  }
+
+  showSlider(){
+    this.showDate = false;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=true;
+    this.showDropdownLabel = false;
+    this.showYesNo = false;
+    this.showradiobuttonlabel = false;
+    this.showmultiplechoiselabel = false;
+  }
+  showLongText(){
+    this.showDate = false;
+    this.showLong = true;
+    this.showShort = false;
+    this.showSliderLabel=false;
+    this.showDropdownLabel = false;
+    this.showYesNo = false;
+    this.showradiobuttonlabel = false;
+    this.showmultiplechoiselabel = false;
+  }
+  showShortText(){
+    this.showDate = false;
+    this.showShort = true;
+    this.showLong = false;
+    this.showSliderLabel=false;
+    this.showDropdownLabel = false;
+    this.showYesNo = false;
+    this.showradiobuttonlabel = false;
+    this.showmultiplechoiselabel = false;
+  }
+  showDateTime(){
+    this.showDate = true;
+    this.showShort = false;
+    this.showLong = false;
+    this.showSliderLabel=false;
+    this.showDropdownLabel = false;
+    this.showYesNo = false;
+    this.showradiobuttonlabel = false;
     this.showmultiplechoiselabel = false;
   }
   showquestionmethod() {

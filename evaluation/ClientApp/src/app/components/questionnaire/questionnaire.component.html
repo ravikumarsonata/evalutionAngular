@@ -99,7 +99,7 @@
                         </svg>
                       </li>
                       <li class="list-inline-item">
-                        <a class="nav-link" mat-button> Yes/No</a>
+                        <a class="nav-link" mat-button (click)="showYesNO()"> Yes/No</a>
                       </li>
                     </ul>
                    
@@ -119,7 +119,7 @@
                         </svg>
                       </li>
                       <li class="list-inline-item">
-                        <a class="nav-link" mat-button> Dropdown</a>
+                        <a class="nav-link" mat-button (click)="showDropdown()"> Dropdown</a>
                       </li>
                     </ul>
 
@@ -140,7 +140,7 @@
                         </svg>
                       </li>
                       <li class="list-inline-item">
-                        <a class="nav-link" mat-button> Opinion Slider</a>
+                        <a class="nav-link" mat-button (click)="showSlider()"> Opinion Slider</a>
                       </li>
                     </ul>
 
@@ -161,7 +161,7 @@
                         </svg>
                       </li>
                       <li class="list-inline-item">
-                        <a class="nav-link" mat-button> Text Box-Short</a>
+                        <a class="nav-link" mat-button (click)="showShortText()"> Text Box-Short</a>
                       </li>
                     </ul>
 
@@ -179,7 +179,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                       <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                    </svg><a class="nav-link" mat-button> Text Box-Long</a>
+                    </svg><a class="nav-link" mat-button (click)="showLongText()"> Text Box-Long</a>
                   </td>
 
                 </tr>
@@ -213,7 +213,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
                       <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
                       <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                    </svg><a class="nav-link" mat-button> Date/Time</a>
+                    </svg><a class="nav-link" mat-button (click)="showDateTime()"> Date/Time</a>
                   </td>
 
                 </tr>
@@ -329,6 +329,67 @@
                     </mat-radio-group>
                   </div>
 
+                  <div *ngIf="showYesNo">
+                    <mat-radio-group aria-label="Select an option">
+                      <mat-radio-button value="1">Yes</mat-radio-button>
+                      <mat-radio-button value="2">No</mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                  <div *ngIf="showDropdownLabel">
+                    <mat-form-field>
+                    
+                      <mat-select
+                      
+                      >
+                        <mat-option value="Multiple Choice">
+                          Multiple Choice</mat-option
+                        >
+                        <mat-option value="Radio Button">Radio Button</mat-option>
+                        <mat-option value="Rating">Rating</mat-option>
+                        <mat-option value="Dropdown">Dropdown </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                  <div *ngIf="showSliderLabel">
+                    <mat-slider></mat-slider>
+                  </div>
+                  <div *ngIf="showShort">
+                    <mat-form-field class="example-full-width">
+                      <input
+                      matInput
+                     
+                      maxlength="120"
+                    />
+                    </mat-form-field>
+                  </div>
+
+                  <div *ngIf="showLong">
+                    <mat-form-field class="example-full-width">
+                      <textarea
+                        matInput
+                       
+                      ></textarea>
+                    </mat-form-field>
+                  </div>
+
+                  <div class="col-md-6" *ngIf="showDate">
+                    <div class="input-group datepicker">
+                      <mat-form-field>
+                        <input
+                          matInput
+                          [matDatepicker]="date"
+                          appDateFormat
+                          placeholder="mm/dd/yyyy"
+                        />
+                        <mat-datepicker-toggle
+                          matSuffix
+                          [for]="date"
+                        ></mat-datepicker-toggle>
+                        <mat-datepicker #date></mat-datepicker>
+                      </mat-form-field>
+                     
+                    </div>
+                  </div>
 
                   <ul class="list-inline float-left">
                     <li class="list-inline-item">
