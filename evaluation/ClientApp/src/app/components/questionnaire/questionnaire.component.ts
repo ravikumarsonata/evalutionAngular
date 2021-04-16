@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../shared/components/dialog/dialog.component';
 
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
+
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
@@ -20,7 +22,15 @@ export class QuestionnaireComponent implements OnInit {
   public showDate = false;
   
   constructor(public dialog: MatDialog) { }
+  items = [
+    { value: 'I can be dragged', disabled: false },
+    { value: 'I cannot be dragged', disabled: true },
+    { value: 'I can also be dragged', disabled: false }
+  ];
 
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.items, event.previousIndex, event.currentIndex);
+  }
   ngOnInit(): void {
   }
 
