@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "evalution:build"
+            "browserTarget": "eValuate:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "evalution:build:production"
+              "browserTarget": "eValuate:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "evalution:build"
+            "browserTarget": "eValuate:build"
           }
         },
         "test": {
@@ -123,16 +123,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "evalution:serve"
+            "devServerTarget": "eValuate:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "evalution:serve:production"
+              "devServerTarget": "eValuate:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "evalution"
+  "defaultProject": "eValuate"
 }
