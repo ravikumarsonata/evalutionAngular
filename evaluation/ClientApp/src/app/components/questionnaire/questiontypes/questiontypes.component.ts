@@ -33,6 +33,63 @@ export class QuestiontypesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public questiontype =  [
+    {
+      "image": "rirani",
+      "questiontypelabel": "Multiple Choice",
+      "questiontype": "multiplechoice",
+     
+    },
+    {
+      "image": "rirani",
+      "questiontypelabel": "Radio Button",
+      "questiontype": "radio",
+    
+    },
+    {
+      "image": "rirani",
+      "questiontypelabel": "Dropdown",
+      "questiontype": "dropdown",
+    
+    }
+    ,
+    {
+      "image": "rirani",
+      "questiontypelabel": "Email",
+      "questiontype": "email",
+
+    }
+    ,
+    {
+      "image": "rirani",
+      "questiontypelabel": "Open Slider",
+      "questiontype": "openslider",
+
+    }
+    ,
+    {
+      "image": "rirani",
+      "questiontypelabel": "Phone",
+      "questiontype": "phone",
+
+    }
+    ,
+    {
+      "image": "rirani",
+      "questiontypelabel": "Date/Time",
+      "questiontype": "phone",
+
+    }
+    ,
+    {
+      "image": "rirani",
+      "questiontypelabel": "Image Choice",
+      "questiontype": "phone",
+
+    }
+  ]
+
+
   openDialog() {
     const dialogRef = this.dialog.open(DialogComponent);
 
