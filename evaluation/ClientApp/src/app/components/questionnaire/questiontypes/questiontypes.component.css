@@ -1,0 +1,187 @@
+/*.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+.question{
+    background-color: #f1e7e7;
+}
+.data{
+    margin-left: 276px;
+}*/
+
+
+
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+  :host ::ng-deep .mat-tab-labels {
+    flex-direction: column;
+  }
+
+mat-tab-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-tab-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep mat-ink-bar {
+  display: none;
+}
+
+/* Styles for the active tab label */
+:host ::ng-deep.mat-tab-label.mat-tab-label-active {
+  background-color: transparent;
+  color: white;
+  background-color: darkcyan;
+  border-right: 2px solid white;
+}
+/* Styles for the active tab label */
+:host ::ng-deep.mat-tab-label {
+  background-color: transparent;
+  /* background-color: lightgray; */
+}
+
+
+table tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.sideMenu tbody {
+  display: block;
+  max-height: 410px !important;
+  overflow-y: scroll;
+}
+
+.sideMenu ::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+/* Track */
+.sideMenu ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.sideMenu ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+  /* Handle on hover */
+  .sideMenu ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* ---------*/
+
+.questionTbl ::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+/* Track */
+.questionTbl ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.questionTbl ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+  .questionTbl ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+table thead, table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+  .card-body {
+    padding-bottom: 200px !important;
+  }
+}
+
+@media only screen and (device-width: 812px) {
+  .bg-image {
+    padding-bottom: 200px !important;
+  }
+
+  .card-body {
+    padding-bottom: 200px !important;
+  }
+}
+
+
+.example-list {
+  width: 500px;
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+  .example-box.cdk-drag-disabled {
+    background: #ccc;
+    cursor: default;
+  }
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
