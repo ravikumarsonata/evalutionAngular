@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../../shared/components/dialog/dialog.component';
 
+import { QuestiontypesService } from '../questiontypes/questiontypes.service';
+
 @Component({
   selector: 'app-questionbuilder',
   templateUrl: './questionbuilder.component.html',
@@ -20,7 +22,7 @@ export class QuestionbuilderComponent implements OnInit {
   public showShort = false;
   public showDate = false;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public question: QuestiontypesService) { }
   items = [
     { value: 'I can be dragged', disabled: false },
     { value: 'I cannot be dragged', disabled: true },
@@ -31,6 +33,8 @@ export class QuestionbuilderComponent implements OnInit {
     moveItemInArray(this.items, event.previousIndex, event.currentIndex);
   }
   ngOnInit(): void {
+
+   
   }
 
   openDialog() {

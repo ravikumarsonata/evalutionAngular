@@ -15,11 +15,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3 ">
-          <app-questiontypes></app-questiontypes>
+          <app-questiontypes [questiontype]="questiontype" (click)="showquestiontype(questiontype)"></app-questiontypes>
+      
         </div>
 
 
         <div class="col-md-5 bg-white">
+          {{result}}
           <app-questionbuilder></app-questionbuilder>
 
         </div>

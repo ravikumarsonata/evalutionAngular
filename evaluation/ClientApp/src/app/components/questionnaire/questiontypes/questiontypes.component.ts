@@ -1,7 +1,8 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../../shared/components/dialog/dialog.component';
+import { QuestiontypesService } from './questiontypes.service';
 
 @Component({
   selector: 'app-questiontypes',
@@ -10,6 +11,7 @@ import { DialogComponent } from '../../../shared/components/dialog/dialog.compon
 })
 export class QuestiontypesComponent implements OnInit {
 
+  @Input() questiontype:any;
   public showquestion: boolean = true;
   public showmultiplechoiselabel: boolean = false;
   public showradiobuttonlabel: boolean = false;
@@ -20,7 +22,7 @@ export class QuestiontypesComponent implements OnInit {
   public showShort = false;
   public showDate = false;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public questiontypesservice: QuestiontypesService) { }
   items = [
     { value: 'I can be dragged', disabled: false },
     { value: 'I cannot be dragged', disabled: true },
@@ -33,61 +35,61 @@ export class QuestiontypesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public questiontype =  [
-    {
-      "image": "rirani",
-      "questiontypelabel": "Multiple Choice",
-      "questiontype": "multiplechoice",
+  //public questiontype =  [
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Multiple Choice",
+  //    "questiontype": "multiplechoice",
      
-    },
-    {
-      "image": "rirani",
-      "questiontypelabel": "Radio Button",
-      "questiontype": "radio",
+  //  },
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Radio Button",
+  //    "questiontype": "radio",
     
-    },
-    {
-      "image": "rirani",
-      "questiontypelabel": "Dropdown",
-      "questiontype": "dropdown",
+  //  },
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Dropdown",
+  //    "questiontype": "dropdown",
     
-    }
-    ,
-    {
-      "image": "rirani",
-      "questiontypelabel": "Email",
-      "questiontype": "email",
+  //  }
+  //  ,
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Email",
+  //    "questiontype": "email",
 
-    }
-    ,
-    {
-      "image": "rirani",
-      "questiontypelabel": "Open Slider",
-      "questiontype": "openslider",
+  //  }
+  //  ,
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Open Slider",
+  //    "questiontype": "openslider",
 
-    }
-    ,
-    {
-      "image": "rirani",
-      "questiontypelabel": "Phone",
-      "questiontype": "phone",
+  //  }
+  //  ,
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Phone",
+  //    "questiontype": "phone",
 
-    }
-    ,
-    {
-      "image": "rirani",
-      "questiontypelabel": "Date/Time",
-      "questiontype": "phone",
+  //  }
+  //  ,
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Date/Time",
+  //    "questiontype": "phone",
 
-    }
-    ,
-    {
-      "image": "rirani",
-      "questiontypelabel": "Image Choice",
-      "questiontype": "phone",
+  //  }
+  //  ,
+  //  {
+  //    "image": "rirani",
+  //    "questiontypelabel": "Image Choice",
+  //    "questiontype": "phone",
 
-    }
-  ]
+  //  }
+  //]
 
 
   openDialog() {
@@ -101,6 +103,12 @@ export class QuestiontypesComponent implements OnInit {
   //  alert('test');
 
   //}
+
+public  result:any;
+  showquestiontype(type: string) {
+
+    this.result =this.questiontypesservice.getquestiontype(type);
+  }
 
   showmultiple() {
     this.showDate = false;
