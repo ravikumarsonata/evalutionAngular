@@ -1,6 +1,7 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+
 import { DialogComponent } from '../../../shared/components/dialog/dialog.component';
 import { QuestiontypesService } from './questiontypes.service';
 
@@ -10,7 +11,8 @@ import { QuestiontypesService } from './questiontypes.service';
   styleUrls: ['./questiontypes.component.css']
 })
 export class QuestiontypesComponent implements OnInit {
-
+  @Output()
+    questioneventtype = new EventEmitter();
   @Input() questiontype:any;
   public showquestion: boolean = true;
   public showmultiplechoiselabel: boolean = false;
@@ -104,10 +106,11 @@ export class QuestiontypesComponent implements OnInit {
 
   //}
 
-public  result:any;
-  showquestiontype(type: string) {
+  public result: any;
+  showquestiontype(questiontype:any) {
+   
 
-    this.result =this.questiontypesservice.getquestiontype(type);
+    this.questioneventtype.emit(questiontype);
   }
 
   showmultiple() {

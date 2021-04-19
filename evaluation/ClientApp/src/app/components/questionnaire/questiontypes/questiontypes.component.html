@@ -11,7 +11,6 @@
       <!--{{questiontype | json }}-->
       {{result}}
       <tr *ngFor="let quest of questiontype">
-
         <td>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
@@ -22,7 +21,7 @@
               </svg>
             </li>
             <li class="list-inline-item">
-              <a class="nav-link" mat-button  (click)="showquestiontype(quest.questiontype)"> {{quest.questiontypelabel}}</a>
+              <a class="nav-link" mat-button  (click)="showquestiontype(quest)"> {{quest.questiontypelabel}}</a>
             </li>
           </ul>
 

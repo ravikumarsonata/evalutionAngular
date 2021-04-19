@@ -1,5 +1,5 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../../shared/components/dialog/dialog.component';
 
@@ -12,6 +12,7 @@ import { QuestiontypesService } from '../questiontypes/questiontypes.service';
 })
 export class QuestionbuilderComponent implements OnInit {
 
+  @Input() type: any;
   public showquestion: boolean = true;
   public showmultiplechoiselabel: boolean = false;
   public showradiobuttonlabel: boolean = false;

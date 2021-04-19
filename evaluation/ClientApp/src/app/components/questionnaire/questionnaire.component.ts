@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../../shared/components/dialog/dialog.component';
 
@@ -12,6 +12,7 @@ import { QuestiontypesService } from './questiontypes/questiontypes.service';
 })
 export class QuestionnaireComponent implements OnInit {
 
+  public questiontypelabel:any;
 
   constructor(public questiontypesservice: QuestiontypesService) { }
   ngOnInit() {
@@ -74,7 +75,16 @@ export class QuestionnaireComponent implements OnInit {
   ]
   public result:any;
   showquestiontype(questiontype: any) {
+
+
     this.result = this.questiontypesservice.getquestiontype(questiontype.questiontype);
 
+  }
+
+
+  questioneventtype(event:any) {
+
+
+    this.questiontypelabel = event.questiontype;
   }
 }
