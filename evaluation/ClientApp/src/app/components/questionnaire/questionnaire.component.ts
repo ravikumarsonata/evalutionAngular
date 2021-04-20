@@ -95,6 +95,6 @@ export class QuestionnaireComponent implements OnInit {
   questioneventtype(event:any) {
 
 
-    this.questiontypelabel = event.questiontype;
+    this.questiontypelabel = event.response_Type_Value;
   }
 }
