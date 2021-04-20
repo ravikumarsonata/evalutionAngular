@@ -4,7 +4,7 @@
     <thead>
       <tr colspan="2">
         <th scope="col">Questions</th>
-
+        <!--{{questiontype | json}}-->
       </tr>
     </thead>
     <tbody>
@@ -21,7 +21,7 @@
               </svg>
             </li>
             <li class="list-inline-item">
-              <a class="nav-link" mat-button  (click)="showquestiontype(quest)"> {{quest.questiontypelabel}}</a>
+              <a class="nav-link" mat-button (click)="showquestiontype(quest)"> {{quest.response_Type_Text}}</a>
             </li>
           </ul>
 
